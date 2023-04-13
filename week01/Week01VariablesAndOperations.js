@@ -52,22 +52,28 @@ Question 1. Creating & 'console.log()'ing variables \n`);
  * ↓ YOUR CODE HERE ↓ */
 
 console.log("Step 1:  Number of Seats on a Plane");
-
+let availableSeats = 7
+console.log(availableSeats)
 
 console.log("Step 2:  Cost of Groceries");
-
+var groceryTotal = 10.50
+console.log(groceryTotal)
 
 console.log("Step 3:  Middle Initial");
-
+var middleInitial = 'J' 
+console.log(middleInitial)
 
 console.log("Step 4:  Is it Hot Outside?");
-
+var isHotOutside = true
+console.log(isHotOutside)
 
 console.log("Step 5:  First Name");
-
+var firstName = 'Christina'
+console.log(firstName)
 
 console.log("Step 6:  Street Address");
-
+var streetAddress = '123 Fake Street'
+console.log(streetAddress)
 
 /*-------------------------------------------------------*/
 
@@ -85,34 +91,37 @@ Question 2. Creating & 'console.log()'ing variables \n`);
     console.log('Remove Plane Seats:')
 //	A customer booked 2 plane seats. Remove 2 seats from the available seats variable
 //  ↓ YOUR CODE HERE ↓
-
+console.log (availableSeats - 2)
 
     console.log('Buy a Candy Bar:')
 //	Impulse candy bar purchase! Add 2.15 to the grocery total
 //  ↓ YOUR CODE HERE ↓
-
+console.log(groceryTotal + 2.15)
 
     console.log('Fix a Birth Certificate:')
 //	A birth certificate was printed incorrectly, change the middle initial to something else
 //  ↓ YOUR CODE HERE ↓
-
+var middleInitial = 'M' 
+console.log(middleInitial)
 
     console.log('Changing Seasons:')
 //	The season has changed, update the hot outside variable	to be opposite of what it was
 //  ↓ YOUR CODE HERE ↓
-    
+var isHotOutside = false
+console.log(isHotOutside)  
 
     console.log('Full Name:')
 //	Create a new variable called full name using the customer's
 //  first name, the middle initial, and a last name of your choice
 //  ↓ YOUR CODE HERE ↓
-
+var fullName = 'Christina M Smith'
+console.log (fullName)
 
     console.log('Introduce a Customer:')
 //	Print a line to the console that introduces the customer 
 //	including the name, and saying that they live at the address variable
 //  ↓ YOUR CODE HERE ↓
-
-
+console.log
+console.log(fullName + streetAddress)
 
     console.log('-----------Finished------------')
