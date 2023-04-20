@@ -39,7 +39,7 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+console.log(alphabetString.split(''));
 
 
 
@@ -58,8 +58,8 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
-
+console.log(alphabetArray.reverse(''));
+console.log(alphabetArray.join(''))
 
 
 
@@ -81,8 +81,12 @@ let array1 = [1, 5, 6, 9, 10, 14];
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
-
+//console.log(array1);
+//console.log(array1[2]);
+//console.log(array1[array1.length - 1]);
+//array1.push(16, 3);
+//console.log(array1[2]);
+//console.log(array1[array1.length - 1]);
 
 
 
@@ -102,10 +106,17 @@ Question 4: Todo List \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var myTodoList = []
+myTodoList.push('Laundry', 'Mop', 'Dishes')
+console.log(myTodoList);
+myTodoList.splice(1, 1)
+console.log(myTodoList)
 
+var yourTodoList = ['Sweep', 'Make bed']
+console.log(yourTodoList);
 
-
-
+var ourTodoList = (myTodoList + yourTodoList)
+console.log(ourTodoList)
 
 
 // Question 5: isEven 
@@ -122,7 +133,15 @@ Question 5: isEven  \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
+function isEven(x){
+       if ((x % 2) === 0)
+              return true;
+       else {
+              return false
+       }
+} 
 
+       
 
 
 
@@ -151,7 +170,13 @@ Question 6: addingMachine \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+function addingMachine(x){
+       let sum = 0;
+       for (let i = 0; i < x.length; i++) {
+              sum += x[i];
+    } 
+    return sum;
+}
 
 
 
@@ -184,7 +209,19 @@ Question 7: reverse \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+function reverse(x) {
+   if (typeof x === 'boolean'){
+       return !x;
+   }  else if (typeof x === 'number'){
+       return x.toString().split('').reverse().join('')
+   }  else if(typeof x === 'string') {
+       return x.split('').reverse().join('')
+   } else if (Array.isArray(x)) {
+       return x.reverse();
+   } else {
+       return false
+   }
+}
 
 
 
@@ -217,7 +254,11 @@ Question 8: removeElements \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+function removeElements(array){
+       while (array.length > 0){
+         array.pop();    
+       } return array;
+}
 
 
 
@@ -225,7 +266,7 @@ Question 8: removeElements \n`);
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above removeElements function (uncomment to test)
-//console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
+console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
 
 
 
@@ -244,7 +285,15 @@ Question 9: whichArrayIsLonger  \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+function whichArrayIsLonger(array1, array2){
+       if (array1.length > array2.length) {
+              return array1
+       } else if (array1.length < array2.length) {
+              return array2
+       } else {
+              return false
+       }
+}
 
 
 
